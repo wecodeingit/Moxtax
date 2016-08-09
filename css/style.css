@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0581e0;
+}
+
+header {
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.menu_tg {
+    float: left;
+    padding: 5px 10px 0 0;
+    margin-top: 8px;
+}
+
+.logo {
+    padding-top: 6px;
+}
+
+.contact_info {
+    padding-top: 6px;
+}
+
+.contact_info span {
+    width: 100%;
+    color: #FFF;
+    font-size: 12px;
+}
+
+labels {
+    width: 28%;
+    float: left;
+    padding-top: 2px;
+}
+
+.primary_menu .navbar {
+    margin-bottom: 0;
+}
+
+.primary_menu a {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.primary_menu nav li a:hover {
+    background: transparent;
+    color: #e11313;
+}
+
+.primary_menu nav .right_login li a:hover {
+    background: #2C7803;
+    color: #FFF;
+}
+
+.primary_menu .navbar-right {
+    margin-right: 0;
+}
+
+.right_login li a,
+.right_login li a:visited,
+.right_login li a:focus {
+    background: #e11313;
+    padding: 8px 15px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+.right_login li .log-in-icon {
+    padding-right: 5px;
+}
+
+#wrapper h2 {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.mortage {
+    padding: 20px 15px;
+    background: #FFF;
+}
+
+.mortage label {
+    width: 25%;
+    text-align: right;
+    font-weight: normal;
+    color: #393838;
+}
+
+.mortage input {
+    width: 40%;
+    display: inline;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 0px;
+}
+
+
+/*.mortage input[type="checkbox"]{width:auto; border:1px solid #ccc;}*/
+
+.mortage .chck {
+    width: auto;
+    width: 3%;
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.mortage button {
+    margin: 0px auto;
+    display: block;
+    background: #e11313;
+    color: #FFF;
+    border: 0px;
+}
+
+.insurance {
+    padding: 20px 15px;
+    background: #FFF;
+}
+
+h3.bg-red {
+    font-size: 18px;
+    color: #FFF;
+    background: #e11313;
+    padding: 15px 15px;
+    margin: 0;
+    text-align: center;
+    line-height: 28px;
+}
+
+.insurance ul {
+    list-style: none;
+    padding-left: 20px;
+    line-height: 24px;
+}
+
+.insurance ul li {
+    padding-bottom: 20px;
+    padding-top: 7px;
+    background: url(../img/list-icon.png) no-repeat;
+    background-position: 2px 15px;
+    padding-left: 20px;
+}
+
+.questions {
+    padding: 20px 15px;
+    background: #FFF;
+}
+
+.questions h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.questions input[type="checkbox"] {
+    width: auto;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    float: left;
+    margin-right: 10px;
+}
+
+.questions .form-group {
+    line-height: 26px;
+}
+
+.questions .choices {
+    margin-top: 10px;
+}
+
+.questions button {
+    position: relative;
+    background: #e11313;
+    color: #FFF;
+    border: 0px;
+}
+
+.questions .prev {
+    left: 10px;
+}
+
+.questions .next {
+    right: 10px;
+    float: right;
+}
+
+.m_top {
+    margin-top: 15px;
+    line-height: 24px
+}
+
+.foot_col {
+    font-size: 14px;
+    color: #FFF;
+}
+
+.foot_col h4 {
+    border-bottom: 1px solid #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+}
+
+.foot_col ul {
+    list-style: none;
+}
+
+.foot_col ul li a {
+    color: #FFF;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.foot_col label {
+    font-weight: normal;
+}
+
+.foot_col button {
+    float: right;
+    background: #e11313;
+    color: #FFF;
+    border: 0px;
+}
+
+footer {
+    border-top: 1px solid #FFF;
+    padding: 10px 0;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 14px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+footer .social {
+    color: #FFF;
+}
+
+footer .social span {
+    float: left;
+    padding: 15px 10px 15px 0;
+}
+
+footer .social ul {
+    list-style: none;
+    background: #FFF;
+    float: left;
+    padding: 2px 10px 2px 5px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    margin: 0;
+}
+
+footer .social ul li {
+    float: left;
+    display: inline;
+    padding-left: 5px;
+}
+
+.rightf {
+    float: right;
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 0px;
+}
+
+.modal-header h4 {
+    color: #e11313;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.modal-body {
+    padding: 15px 20px;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+}
+
+#login .modal-dialog {
+    width: 458px;
+    font-size: 14px;
+}
+
+.modal-dialog label {
+    font-weight: normal;
+    padding: 5px 0;
+}
+
+.modal-dialog .checkbox label {
+    padding-left: 20px;
+}
+
+#login button.login {
+    background: #e11313;
+    color: #FFF;
+    border: 0px;
+    width: 100%;
+}
+
+#login .small {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#login .small p {
+    line-height: 22px;
+}
+
+#login .links {
+    line-height: 24px;
+    font-size: 13px;
+}
+
+#login .a {
+    font-size: 13px;
+}
+
+#register .modal-dialog {
+    width: 500px;
+    font-size: 14px;
+}
+
+#register .modal-body {
+    padding: 10px 20px;
+}
+
+#register .form-group {
+    margin-bottom: 5px;
+}
+
+#register .modal-dialog label {
+    padding: 0;
+}
+
+#register button {
+    background: #399905;
+    color: #FFF;
+    border: 0px;
+    margin: 0 auto;
+    display: block;
+}
+
+#register .small {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#register .small p {
+    line-height: 22px;
+}
+
+#register .links {
+    line-height: 24px;
+    font-size: 13px;
+}
+
+#register .a {
+    font-size: 13px;
+}
+
+.carousel-control.right {
+    float: right;
+}
+
+.carousel-control {
+    position: relative;
+    text-shadow: none;
+    background: #e11313;
+    color: #FFF;
+    width: auto;
+    padding: 3px 10px;
+    border-radius: 5px;
+    opacity: 1;
+    background-image: none !important;
+}
+
+.sr-only {
+    position: relative;
+    width: auto;
+    height: auto;
+}
