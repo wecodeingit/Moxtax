@@ -2,17 +2,24 @@
 
 route.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-function route($stateProvider, $urlRouterProvider) {
+require('./demo');
+var demoTmpl = require("./demo/demo.html");
 
-    var tmpl = require("./home/home.html");
+require('./home');
+require('./header');
+
+function route($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
     $stateProvider
+        .state('demo', {
+            url: '/demo',
+            template: demoTmpl,
+        })
         .state('home', {
             url: '/home',
-            template: tmpl,
+            template: '<home-component></home-component>',
         });
-
 }
 
 module.exports = route;

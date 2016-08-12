@@ -1,0 +1,292 @@
+<div class="main_container" ng-controller="DemoCtrl as vm">
+    <div class="container">
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <h3>Menu</h3>
+            <a href="#">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#">Data</a>
+        </nav>
+        <header>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="menu_tg" id="showLeftPush"><img src="../../img/menu-tog.png" width="23" height="19" alt="menu"></div>
+                    <div class="logo">
+                        <img src="../../img/logo.png" width="159" height="37" alt="Mox Tax">
+                    </div>
+                </div>
+                <div class="contact_info col-sm-2">
+                    <span><labels>tel:</labels>01457 877 632</span>
+                    <span><labels>mob:</labels>07841 563 292</span>
+                </div>
+                <div class="primary_menu col-sm-5">
+                    <nav class="navbar  navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a class="" href="#">Products &amp; Pricing</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav right_login">
+                            <li><a href="#" data-toggle="modal" data-target="#login"><span class="log-in-icon"><img src="../../img/login-icon.png" width="15" height="21" alt="login"></span> Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade" id="login" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&amp;times;</button>
+                        <h4 class="modal-title">Sign In</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="" role="form">
+                            <div class="form-group">
+                                <label for="user-id">User Id:</label>
+                                <input type="text" class="form-control" id="user-id" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-default login">Login</button>
+                        </form>
+                        <div class="small">
+                            <p> By clicking Sign In, you agree to our <a href="#">License Agreement and Privacy Statement.</a></p>
+                        </div>
+                        <div class="links">
+                            <a href="#">I forgot my user ID or password</a>
+                            <br>
+                            <span>New to Intuit? </span><a data-dismiss="modal" data-toggle="modal" href="#register">Create an account.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="register" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&amp;times;</button>
+                        <h4 class="modal-title">Create Your Account</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="" role="form">
+                            <div class="form-group">
+                                <!-- Username -->
+                                <label class="control-label" for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <!-- Username -->
+                                <label class="control-label" for="phone">Phone No:</label>
+                                <input type="text" id="phone" name="phone" placeholder="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <!-- E-mail -->
+                                <label class="control-label" for="email">E-mail Id</label>
+                                <input type="text" id="email" name="email" placeholder="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <!-- Password-->
+                                <label class="control-label" for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <!-- Password -->
+                                <label class="control-label" for="address">Address</label>
+                                <textarea class="form-control" name="address"></textarea>
+                            </div>
+                            <div class="control-group">
+                                <!-- Button -->
+                                <div class="controls">
+                                    <button type="submit" class="btn btn-default">Create Account</button>
+                                </div>
+                            </div>
+                            </fieldset>
+                        </form>
+                        <div class="small">
+                            <p> By clicking Create Account, you agree to our <a href="#">License Agreement and Privacy Statement.</a></p>
+                        </div>
+                        <div class="links">
+                            <a href="#">I forgot my user ID or password</a>
+                            <br>
+                            <span>Already Have an Account? </span><a data-dismiss="modal" data-toggle="modal" href="#login">Login.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="wrapper">
+            <h2>Mortage Calculator</h2>
+            <div class="row">
+                <div class="col-sm-8 ">
+                    <div class="col-sm-12 mortage">
+                        <form action="#" method="post" class="">
+                            <div class="form-group">
+                                <label for="sale">Sale Price of Home :</label>
+                                <input type="text" class="form-control" id="sale" name="sale"><span>(In Dollars)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="percent-down">Percentage Down :</label>
+                                <input type="text" class="form-control" id="percent-down" name="percent-down"><span>%</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="length">Length of Mortgage :</label>
+                                <input type="text" class="form-control" id="length" name="length"><span>Years</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Annual Interest Rate :</label>
+                                <input type="text" class="form-control" id="interest" name="interest"><span>%</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="calc">Explain Calculations :</label>
+                                <input type="checkbox" class="form-control chck " id="calc" name="calc"><span class="mtop">Show me the calculations and amortization</span>
+                            </div>
+                            <button type="submit" class="btn btn-default">Calculate</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="bg-red">
+Why Choose Active
+Mortgage &amp; Insurance
+Solutions?
+</h3>
+                    <div class="col-sm-12 insurance">
+                        <ul>
+                            <li>Impartial &amp; independent advice on mortgages &amp; insurance</li>
+                            <li>Fee-Free Advice*</li>
+                            <li>Free home visits available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2>Question with single &amp; Multi-select options:</h2>
+            <div class="col-sm-12 questions">
+                <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
+                    <!-- Indicators -->
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <h5>1. What are the features you are looking for in your new home?</h5>
+                            <form action="#" method="post" class="">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-8 choices">
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Children's play Area">Children's play Area
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Centralized Air Conditioning">Centralized Air Conditioning
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Schools near by">Schools near by
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Gated Community">Gated Community
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Swimming Pool">Swimming Pool
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item">
+                            <h5>2. How are the features you are looking for in your new home?</h5>
+                            <form action="#" method="post" class="">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-8 choices">
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Centralized Air Conditioning">Centralized Air Conditioning
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Swimming Pool">Swimming Pool
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Gated Community">Gated Community
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Children's play Area">Children's play Area
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" value="Schools near by">Schools near by
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 m_top foot_col">
+                    <h4>About</h4>
+                    <p>MoxTax Mortgage Planners operates under TMG The Mortgage Group Ontario Inc. (Broker License #10245, Agent #M10000474)</p>
+                    <p>310 Davenport Road, Suite 200, Toronto, Ontario M5R 1K6</p>
+                </div>
+                <div class="col-sm-4 m_top foot_col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Borrower Beware</a></li>
+                        <li><a href="#">First-time Home Buyers</a></li>
+                        <li><a href="#">Monday Morning Interest Rate Updates</a></li>
+                        <li><a href="#">Opinion</a></li>
+                        <li><a href="#">Product Commentary</a></li>
+                        <li><a href="#">Quarterly Mortgage Market Updates and Commentary</a></li>
+                        <li><a href="#">Tax-deductible Mortgages</a></li>
+                        <li><a href="#">Uncategorized</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 m_top foot_col">
+                    <h4>Newsletter</h4>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label>Enter your email address:</label>
+                            <input class="form-control" type="text" name="news-name">
+                        </div>
+                        <button type="submit" name="news-submit" class="btn btn-default">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="copy col-sm-6">
+                    <p>Copyright 2016 @ moxtax</p>
+                </div>
+                <div class="social col-sm-6">
+                    <div class="rightf">
+                        <span>Follow Us:</span>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="../../img/fb.png" width="46" height="46" alt="social"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../img/twitter.png" width="46" height="46" alt="social"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../img/linkedln.png" width="46" height="46" alt="social"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../img/gplus.png" width="46" height="46" alt="social"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

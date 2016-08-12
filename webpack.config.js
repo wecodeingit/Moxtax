@@ -10,8 +10,9 @@ var cssnano = require('cssnano');
 var webpack = require('webpack');
 var PORT = 9000;
 
+
 module.exports = {
-    entry: __dirname + "/app/",
+    entry: [__dirname + "/app/"],
     output: {
         path: __dirname + "/dist",
         filename: "bundle.js"
@@ -83,14 +84,6 @@ module.exports = {
             $: "jquery",
             jQuery: "jquery"
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            exclude: /(node_modules|bower_components)/,
-            minimize: true,
-            sourceMap: true,
-            compress: {
-                drop_console: true
-            }
-        }),
         new HtmlWebpackPlugin({
             favicon: 'favicon.ico',
             template: 'index.html'
@@ -103,14 +96,22 @@ module.exports = {
             onBuildStart: ['echo "Bundling Started"'],
             onBuildEnd: ['node launch_app ' + PORT]
         }),
-        new OptimizeCssAssetsPlugin({
-            assetNameRegExp: /\.css$/,
-            cssProcessor: cssnano,
-            cssProcessorOptions: {
-                discardDuplicates: true,
-                sourcemap: true
-            },
-            canPrint: true
-        })
+        //To be enabled for minification
+        // new webpack.optimize.UglifyJsPlugin({
+        //     minimize: true,
+        //     sourceMap: true,
+        //     compress: {
+        //         drop_console: true
+        //     }
+        // }),
+        // new OptimizeCssAssetsPlugin({
+        //     assetNameRegExp: /\.css$/,
+        //     cssProcessor: cssnano,
+        //     cssProcessorOptions: {
+        //         discardDuplicates: true,
+        //         sourcemap: true
+        //     },
+        //     canPrint: true
+        // })
     ]
 };
