@@ -1,6 +1,6 @@
 'use strict';
 
-function HomeCtrl($scope) {
+function HomeCtrl() {
     var vm = this;
     vm.message = 'Hello World';
 }
