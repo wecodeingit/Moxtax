@@ -1,21 +1,16 @@
-module.exports = function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider)
+'use strict';
 
-{
-    'use strict';
+config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider'];
+
+function config($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 
     $locationProvider.hashPrefix('!');
 
-    // This is required for Browser Sync to work poperly
-    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
     //Global HTTP error handler
     var interceptor = ['$q', '$injector', function($q, $injector) {
-        function showMessage(text) {
-            console.log("error");
-        }
         return {
             responseError: function(error) {
-                showMessage('Network Error');
+                console.log('Network Error');
                 return $q.reject(error);
             }
         };
@@ -24,4 +19,6 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider,
 
     $httpProvider.interceptors.push(interceptor);
 
-};
+}
+
+module.exports = config;

@@ -106,7 +106,10 @@ module.exports = {
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/,
             cssProcessor: cssnano,
-            cssProcessorOptions: { discardComments: { removeAll: true } },
+            cssProcessorOptions: {
+                discardDuplicates: true,
+                sourcemap: true
+            },
             canPrint: true
         })
     ]
